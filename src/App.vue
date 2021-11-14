@@ -1,26 +1,53 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+		
+    <v-system-bar app >
+			<v-row justify="center">
+				<strong>v-system-bar</strong>
+			</v-row>
+    </v-system-bar>
+
+		<v-navigation-drawer app >
+			<v-col align="center">
+				<strong>v-navigation-drawer</strong>
+			</v-col>
+		</v-navigation-drawer>
+
+		<v-app-bar app>
+				<v-row justify="center">
+					<strong>v-app-bar</strong>
+			</v-row>
+		</v-app-bar>
+
+		<v-container fill-height fluid>
+			<v-content>
+				<v-row align="center">
+					<v-col class="text-center">
+						<strong>v-content</strong>
+					</v-col>
+				</v-row>
+			</v-content>
+		</v-container>
+
+		<v-footer height="30px" app>
+			<v-row justify="center">
+				<strong>v-footer</strong>
+			</v-row>
+		</v-footer>
+
+		<v-bottom-navigation app>
+			<v-row align="center" justify="center">
+				<strong>v-bottom-navigation</strong>
+			</v-row>
+		</v-bottom-navigation>
+
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    data: () => ({
+      links: [],
+    }),
   }
-}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
