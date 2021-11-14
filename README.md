@@ -1,5 +1,8 @@
 # projeto_web
 
+## VuetifyJS UI Components
+<img src="public/vuetify.png" alt="VuetifyJS UI Components" />
+
 ## Project setup
 ```
 npm install
